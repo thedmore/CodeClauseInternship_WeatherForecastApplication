@@ -16,7 +16,7 @@ let target = "Mysore";
 // Function to fetch data from Weather API
 const fetchData = async (target) => {
   try {
-    const url = `http://api.weatherapi.com/v1/current.json?key=407dc3bf999b4c24b66180533232909&q=${target}`;
+    const url = `https://api.weatherapi.com/v1/current.json?key=407dc3bf999b4c24b66180533232909&q=${target}`;
 
     const response = await fetch(url);
     const data = await response.json();
